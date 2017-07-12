@@ -4195,7 +4195,6 @@ static void platform_check_hdmi_backend_cfg(struct audio_device* adev,
     unsigned int sample_rate;
     unsigned int channels, max_supported_channels = 0;
     struct platform_data *my_data = (struct platform_data *)adev->platform;
-    edid_audio_info *edid_info = (edid_audio_info *)my_data->edid_info;
     bool passthrough_enabled = false;
 
     bit_width = hdmi_backend_cfg->bit_width;
